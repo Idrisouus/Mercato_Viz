@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Images/Mv.png">
+  <title>MercatoVIZ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="animate__animated animate__fadeIn">
+      <span class="mercato">
+        MERCATO
+        <span class="img-left animate__animated animate__bounceInDown"><img src="Images/image 12.svg" alt="joueur gauche"></span>
+        <span class="img-central animate__animated animate__bounceInDown"><img src="Images/image 2.svg" alt="Joueur central"></span>
+      </span>
+      <span class="viz">
+        VIZ
+        <span class="img-right animate__animated animate__bounceInDown"><img src="Images/Group 3.svg" alt="joueur droit"></span>
+      </span>
+    </h1>
+
+    <p class="animate__animated animate__fadeIn">
+      L'EXPLOSION DU MARCHÉ DES TRANSFERTS DANS LE FOOTBALL EUROPÉEN
+    </p>
+
+    <a href="#h2"><button class="animate__animated animate__fadeIn animate__delay-4s">EXPLORER LA DATAVIZ</button></a>
+  </div>
+
+  <p id="h2" class="col"></p>
+
+  <section id="contexte" class="contexte">
+    <div class="contexte-container">
+      <h2>
+        <span class="unpeu">UN PEU DE  
+          <span class="img-context-left"><img src="Images/image 18.svg" alt="joueur gauche"></span>
+        </span>
+        <span class="highlight"> CONTEXTE
+          <span class="img-context-right"><img src="Images/image 19.svg" alt="joueur droit"></span>
+        </span>
+      </h2>
+      <span class="paragraphe">
+        <p>Le football n’est pas seulement un sport : c’est aussi une économie où les transferts de joueurs atteignent des sommets. Depuis 20 ans, les montants dépensés par les clubs explosent, transformant le mercato en véritable spectacle financier. </p>
+      </span>
+      <p>Les grandes puissances européennes, soutenues par des investisseurs privés ou des fonds souverains, rivalisent à coups de millions pour attirer les meilleurs talents. </p>
+      <p>Cette inflation des prix ne concerne pas seulement les stars, mais se répercute aussi sur les jeunes espoirs, parfois achetés pour des sommes astronomiques avant même d’avoir confirmé leur potentiel. </p>
+      <p>À cela s’ajoutent les commissions versées aux agents et les stratégies de communication mises en place pour maximiser l’impact médiatique de chaque transfert.</p>
+      <p>Le mercato devient ainsi un outil de prestige, d’image et de marketing pour les clubs, autant qu’un enjeu sportif.</p>
+      <p>À travers cette visualisation interactive, découvrez l’évolution des transferts : l’inflation des dépenses dans les 5 grands championnats européens et les records marquants qui ont fait l’histoire.</p>
+    </div>
+  </section>
+
+  <section id="records" class="records">
+    <div class="contexte-container">
+      <h2>
+        <span class="rec">LES RECORDS 
+          <span class="img-records-left"><img src="Images/image 15.svg" alt="joueur gauche"></span>
+        </span>
+        <span class="highlight"> INDIVIDUELS</span>
+      </h2>
+
+      <div class="records-content">
+        <div class="records-text">
+          <p> Le record absolu reste celui de Neymar, acheté par le Paris Saint-Germain en 2017 pour <span class="prix"> 222 millions d’euros </span> en provenance du FC Barcelone, un montant qui a bouleversé le marché des transferts. </p>
+          <p>Son coéquipier Kylian Mbappé a suivi en 2018 avec un transfert de <span class="prix"> 180 millions d’euros </span>, faisant de lui le joueur français le plus cher de l’histoire. </p>
+          <p>Plus récemment, Alexander Isak est devenu l’un des attaquants les plus chers du marché avec un transfert avoisinant <span class="prix">145 millions d’euros </span> , confirmant que l’inflation des transferts touche aussi les nouvelles générations de joueurs.</p>
+        </div>
+
+        <div class="swiper-area">
+          <span class="img-swiper-left"><img src="Images/neymar.svg" alt="joueur gauche"></span>
+          <div class="swiper records-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Images/neymar.jpg" alt="neymar" width="500"></div>
+              <div class="swiper-slide"><img src="Images/dembele.jpg" alt="Dembélé"></div>
+              <div class="swiper-slide"><img src="Images/isack.webp" alt="Isack"></div>
+              <div class="swiper-slide"><img src="Images/mbappe.jpg" alt="mbappe"></div>
+              <div class="swiper-slide"><img src="Images/" alt="bellingham"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <a href="#top" class="scroll-up">⌃</a>
+
+  <aside class="side-header">
+    <ul>
+      <li><a href="#contexte">UN PEU DE CONTEXTE</a></li>
+      <li><a href="#records">LES RECORDS INDIVIDUELS</a></li>
+      <li><a href="#depenses">LES PlUS GROS TRANSFERTS PAR ANNÉE</a></li>
+      <li><a href="#conclusion">ÉVOLUTION & CONCLUSION</a></li>
+    </ul>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script> </body>
+</html>
