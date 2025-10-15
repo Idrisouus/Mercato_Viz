@@ -10,9 +10,9 @@ html, body {
     width: 100%;
     min-width: 768px;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
-@font-face {
+@font-face { 
   font-family: "Arcane";
   src: url("Polices/arcane_nine/Arcane\ Nine.otf") format("opentype");
   font-weight: normal;
@@ -43,11 +43,11 @@ body {
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 100vh;           
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;       
+  align-items: center;           
   text-align: center;
 }
 
@@ -62,16 +62,16 @@ h1 {
 }
 
 h1 .mercato {
-  letter-spacing: 3px;
+  letter-spacing: 3px; 
   display: inline-block;
-  margin-right: -20px;
-  position: relative;
+  margin-right: -20px; 
+  position: relative; 
 }
 
 h1 .mercato .img-left {
   position: absolute;
-  top: -133px;
-  left: -38px;
+  top: -133px;  
+  left: -38px;  
 }
 
 h1 .mercato .img-left img {
@@ -93,13 +93,13 @@ h1 .viz {
   color: #EDD60A;
   letter-spacing: 3.5px;
   font-size: 1.3em;
-  position: relative;
+  position: relative; 
 }
 
 h1 .viz .img-right {
   position: absolute;
-  top: -120px;
-  left: -18px;
+  top: -120px;  
+  left: -18px;    
 }
 
 h1 .viz .img-right img {
@@ -110,7 +110,7 @@ p {
   font-family: "Exo";
   color: white;
   font-size: 1.5em;
-  margin: 0;
+  margin: 0;        
   margin-bottom: 20px;
 }
 
@@ -134,13 +134,13 @@ button:hover {
   animation-duration: 4s;
 }
 .animate__bounceInUp {
-  animation-duration: 2s;
+  animation-duration: 2s; 
 }
 h1.animate__fadeIn {
-  animation-duration: 3s;
+  animation-duration: 3s; 
 }
 p.animate__fadeIn {
-  animation-duration: 3s;
+  animation-duration: 3s; 
 }
 button.animate__fadeIn{
   animation-duration: 4s;
@@ -156,16 +156,16 @@ h2 {
   margin-bottom: -15px;
 }
 h2 .unpeu {
-  letter-spacing: 3px;
+  letter-spacing: 3px; 
   display: inline-block;
-  margin-right: -20px;
-  position: relative;
+  margin-right: -20px; 
+  position: relative; 
 }
 
 h2 .unpeu .img-context-left {
   position: absolute;
-  top: -103px;
-  left: -45px;
+  top: -103px;  
+  left: -45px;  
 }
 
 h2 .unpeu .img-context-left img {
@@ -179,13 +179,13 @@ h2 .highlight {
   letter-spacing: 3.5px;
   font-size: 1.3em;
   margin-left: 20px;
-  position: relative;
+  position: relative; 
 }
 
 h2 .highlight .img-context-right {
   position: absolute;
   top: -102px;
-  left: 199px;
+  left: 199px;  
 }
 
 h2 .highlight .img-context-right img {
@@ -224,8 +224,8 @@ h2 .highlight .img-context-right img {
 
 h2 .rec .img-records-left {
   position: absolute;
-  top: -99px;
-  left: 175px;
+  top: -99px; 
+  left: 175px;   
 }
 
 h2 .rec .img-records-left img {
@@ -234,8 +234,8 @@ h2 .rec .img-records-left img {
 h2 .rec {
   display: inline-block;
   letter-spacing: 2px;
-  margin-right: -20px;
-  position: relative;
+  margin-right: -20px; 
+  position: relative; 
 }
 h2 .highlight {
   font-family: "Urban";
@@ -243,7 +243,7 @@ h2 .highlight {
   letter-spacing: 3.5px;
   font-size: 1.3em;
   margin-left: 20px;
-  position: relative;
+  position: relative; 
 }
 
 .records-text {
@@ -252,12 +252,12 @@ h2 .highlight {
   font-size: 5rem;
   line-height: 1.5;
   text-align: justify;
-  margin-top: 30px;
+  margin-top: 30px; 
 }
 
 .records-content {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; 
   justify-content: space-between;
   gap: 80px;
   margin-top: 60px;
@@ -267,23 +267,23 @@ h2 .highlight {
 .records-swiper {
   flex-shrink: 0;
   width: 450px;
-  height: 390px;
+  height: 390px; 
   padding-left: 20px;
   position: relative;
   overflow: hidden;
 }
 .swiper-area {
   position: relative;
-  width: 450px;
-  flex-shrink: 0;
+  width: 450px; 
+  flex-shrink: 0; 
 }
 
 
 .img-swiper-left {
   position: absolute;
-  width: 160px;
-  top: -68px;
-  left: -48px;
+  width: 160px; 
+  top: -68px;   
+  left: -48px;  
   z-index: 10;
 }
 
@@ -293,7 +293,7 @@ h2 .highlight {
 }
 
 .records-swiper .swiper-slide {
-  height: 250px;
+  height: 250px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -310,8 +310,8 @@ h2 .highlight {
 
 h2 .highlight .img-depenses-right {
   position: absolute;
-  top: -88px;
-  left: 131px;
+  top: -88px;  
+  left: 131px;   
 }
 
 h2 .highlight .img-depenses-right img {
@@ -319,8 +319,8 @@ h2 .highlight .img-depenses-right img {
 }
 h2 .plus .img-depenses-left {
   position: absolute;
-  top: -103px;
-  left: 115px;
+  top: -103px;  
+  left: 115px;   
 }
 
 h2 .plus .img-depenses-left img {
@@ -329,8 +329,8 @@ h2 .plus .img-depenses-left img {
 h2 .plus {
   display: inline-block;
   letter-spacing: 2px;
-  margin-right: -20px;
-  position: relative;
+  margin-right: -20px; 
+  position: relative; 
 }
 h2 .highlight {
   font-family: "Urban";
@@ -338,23 +338,30 @@ h2 .highlight {
   letter-spacing: 3.5px;
   font-size: 1.3em;
   margin-left: 20px;
-  position: relative;
+  position: relative; 
 }
 .depenses{
   margin-top: 280px;
   margin-bottom: 150px;
 }
 .depenses-container{
-
   margin-left: 180px;
   margin-right: 180px;
-
 }
 .depenses-container p{
-
   font-size: 1.2rem;
 }
-
+.texte_dep{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+}
+.roi{
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Arcane';
+  color: #EDD60A;
+}
 .side-header {
   position: fixed;
   top: 50%;
@@ -390,7 +397,7 @@ h2 .highlight {
   text-decoration: none;
   font-size: 0.7rem;
   letter-spacing: 2px;
-  writing-mode: vertical-lr;
+  writing-mode: vertical-lr; 
   transition: color 0.3s;
 }
 
@@ -400,8 +407,8 @@ h2 .highlight {
 
 .vertical-text {
   display: flex;
-  flex-direction: row;
-  gap: 60px;
+  flex-direction: row; 
+  gap: 60px; 
 }
 
 .vertical-text p {
@@ -409,7 +416,7 @@ h2 .highlight {
   color: white;
   font-size: 0.7rem;
   letter-spacing: 3px;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-rl; 
   text-orientation: mixed;
   transition: color 0.3s;
   cursor: pointer;
@@ -436,4 +443,80 @@ h2 .highlight {
 }
 .side-header ul li a.active {
   color: #EDD60A;
+}
+
+.chart-section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 2000px;
+    height: 50vh;
+    margin-top: 80px;
+}
+
+#display-area {
+    width: 450px;
+    min-width: 350px;
+    min-height: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: "Exo";
+    border-radius: 10px;
+}
+
+#display-area img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#display-area .transfer-description {
+    color: #FFFFFF;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 0;
+}
+.chart-container {
+    flex-grow: 1;
+    height: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 1200px) {
+    .chart-section-container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    #display-area {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .chart-container {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.chart-section-container {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.chart-section-container.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }

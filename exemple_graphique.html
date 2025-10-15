@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" href="Images/Mv.png">
   <title>MercatoVIZ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="exemple_graphique.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
@@ -58,7 +58,7 @@
 
   <section id="records" class="records">
     <div class="contexte-container">
-      <h2 class="animate__animated animate__slideInUp">
+      <h2>
         <span class="rec">LES RECORDS 
           <span class="img-records-left"><img src="Images/image 15.svg" alt="joueur gauche"></span>
         </span>
@@ -88,9 +88,11 @@
       </div>
     </section>
 
+    <p id="dep" class="col"></p>
+
     <section id="depenses" class="depenses">
       <div class="depenses-container">
-        <h2 class="animate__animated animate__slideInUp">
+        <h2>
           <span class="plus">Les plus gros transferts par 
             <span class="img-depenses-left"><img src="Images/bellingham.svg" alt="joueur droit"></span>
           </span>
@@ -98,14 +100,17 @@
             <span class="img-depenses-right"><img src="Images/messi.svg" alt="joueur droit"></span>
           </span>
         </h2>
-        <span class="paragraphe">
-          <p>Le football n’est pas seulement un sport : c’est aussi une économie où les transferts de joueurs atteignent des sommets. Depuis 20 ans, les montants dépensés par les clubs explosent, transformant le mercato en véritable spectacle financier. </p>
+        <span><p class="texte_dep">Chaque mercato a son <span class="roi">ROI</span>, ce joueur dont le transfert record définit toute une saison. D'une année à l'autre, les chiffres s'envolent et les visages changent, témoignant d'une inflation spectaculaire.</p>
         </span>
-        <p>Les grandes puissances européennes, soutenues par des investisseurs privés ou des fonds souverains, rivalisent à coups de millions pour attirer les meilleurs talents. </p>
-        <p>Cette inflation des prix ne concerne pas seulement les stars, mais se répercute aussi sur les jeunes espoirs, parfois achetés pour des sommes astronomiques avant même d’avoir confirmé leur potentiel. </p>
-        <p>À cela s’ajoutent les commissions versées aux agents et les stratégies de communication mises en place pour maximiser l’impact médiatique de chaque transfert.</p>
-        <p>Le mercato devient ainsi un outil de prestige, d’image et de marketing pour les clubs, autant qu’un enjeu sportif.</p>
-        <p>À travers cette visualisation interactive, découvrez l’évolution des transferts : l’inflation des dépenses dans les 5 grands championnats européens et les records marquants qui ont fait l’histoire.</p>
+        
+        <div class="chart-section-container">
+            <div id="display-area">
+                </div>
+            <div class="chart-container">
+                <canvas id="transferChart"></canvas>
+            </div>
+        </div>
+
       </div>
     </section>
 
@@ -115,12 +120,13 @@
     <ul>
       <li><a href="#cont">UN PEU DE CONTEXTE</a></li>
       <li><a href="#rec">LES RECORDS INDIVIDUELS</a></li>
-      <li><a href="#depenses">PlUS GROS TRANSFERTS PAR SAISON</a></li>
+      <li><a href="#dep">PlUS GROS TRANSFERTS PAR SAISON</a></li>
       <li><a href="#conclusion">ÉVOLUTION 5 CHAMPIONNATS</a></li>
     </ul>
   </aside>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="script.js"></script> 
+  <script src="exemple.js"></script> 
 </body>
 </html>

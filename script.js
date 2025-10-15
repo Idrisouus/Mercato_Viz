@@ -1,14 +1,19 @@
 const sideHeader = document.querySelector('.side-header');
-const contexteSection = document.querySelector('.contexte');
-const recordsSection = document.querySelector('#records'); // Ajout pour cibler la section records
+const contexteSection = document.querySelector('#contexte');
+const recordsSection = document.querySelector('#records');
+const depenseSection = document.querySelector('#depenses');
+
 
 window.addEventListener('scroll', () => {
   const contexteRect = contexteSection.getBoundingClientRect();
   const recordsRect = recordsSection.getBoundingClientRect();
+  const depenseRect = depenseSection.getBoundingClientRect();
 
-  // Le header est visible si on est dans la section contexte OU records
+
+
   if ((contexteRect.top <= window.innerHeight * 0.5 && contexteRect.bottom > 0) || 
-      (recordsRect.top <= window.innerHeight && recordsRect.bottom > 0)) {
+      (recordsRect.top <= window.innerHeight && recordsRect.bottom > 0)
+      (depenseRect.top <= window.innerHeight && depenseRect.bottom > 0)) {
     sideHeader.classList.add('visible');
   } else {
     sideHeader.classList.remove('visible');
