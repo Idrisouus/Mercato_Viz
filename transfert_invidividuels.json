@@ -7,7 +7,8 @@
     "VENDEUR": "Liverpool ",
     "ACHETEUR": "Chelsea",
     " PRIX ": " 58,000,000.00 € ",
-    "LIEN": "Cartes/2010.svg"
+    "LIEN": "Cartes/2010.svg",
+    "TEXTE": "En janvier 2011, Fernando Torres a été transféré de Liverpool à Chelsea pour un montant record à l'époque en Angleterre."
   },
   {
     "ANNÉE": "2011/2012",
@@ -17,7 +18,8 @@
     "VENDEUR": "Palerme",
     "ACHETEUR": "Paris SG",
     " PRIX ": " 41,000,000.00 € ",
-    "LIEN": "Cartes/2011.svg"
+    "LIEN": "Cartes/2011.svg",
+    "TEXTE": "À l'été 2011, Javier Pastore est devenu le premier transfert majeur de l'ère qatarie du PSG, en arrivant de Palerme pour environ 41 millions d'euros."
   },
   {
     "ANNÉE": "2012/2013",
@@ -27,7 +29,8 @@
     "VENDEUR": "AC Milan",
     "ACHETEUR": "Paris SG",
     " PRIX ": " 42,000,000.00 € ",
-    "LIEN": "Cartes/2012.svg"
+    "LIEN": "Cartes/2012.svg",
+    "TEXTE": "Thiago Silva, l'un des meilleurs défenseurs du monde, a rejoint le PSG en 2012 en provenance de l'AC Milan, marquant une étape clé dans l'ambitieux projet du club parisien."
   },
   {
     "ANNÉE": "2013/2014",
@@ -37,7 +40,8 @@
     "VENDEUR": "Tottenham",
     "ACHETEUR": "Real Madrid",
     " PRIX ": " 101,000,000.00 € ",
-    "LIEN": "Cartes/2013.svg"
+    "LIEN": "Cartes/2013.svg",
+    "TEXTE": "En 2013, Gareth Bale a rejoint le Real Madrid en provenance de Tottenham pour un montant record à l'époque, estimé à environ 101 millions d'euros."
   },
   {
     "ANNÉE": "2014/2015",
@@ -47,7 +51,8 @@
     "VENDEUR": "Liverpool ",
     "ACHETEUR": "FC Barcelone",
     " PRIX ": " 81,720,000.00 € ",
-    "LIEN": "Cartes/2014.svg"
+    "LIEN": "Cartes/2014.svg",
+    "TEXTE": "En 2014, Luis Suárez a rejoint le FC Barcelone en provenance de Liverpool pour environ 81 millions d'euros, formant ainsi la redoutable MSN avec Messi et Neymar."
   },
   {
     "ANNÉE": "2015/2016",
@@ -57,7 +62,8 @@
     "VENDEUR": "Wolfsburg",
     "ACHETEUR": "Man City",
     " PRIX ": " 76,000,000.00 € ",
-    "LIEN": "Cartes/2015.svg"
+    "LIEN": "Cartes/2015.svg",
+    "TEXTE": "En 2015, Kevin De Bruyne a signé à Manchester City en provenance du VfL Wolfsburg pour un montant d'environ 76 millions d'euros, ce qui constituait alors un record pour le club."
   },
   {
     "ANNÉE": "2016/2017",
@@ -67,7 +73,8 @@
     "VENDEUR": "Juventus",
     "ACHETEUR": "Man UTD",
     " PRIX ": " 101,000,000.00 € ",
-    "LIEN": "Cartes/2016.svg"
+    "LIEN": "Cartes/2016.svg",
+    "TEXTE": "En 2016, Paul Pogba a fait un retour retentissant à Manchester United, quittant la Juventus pour un montant qui a battu le record mondial de l'époque, s'élevant à 101 millions d'euros."
   },
   {
     "ANNÉE": "2017/2018",
@@ -77,7 +84,8 @@
     "VENDEUR": "FC Barcelone",
     "ACHETEUR": "Paris SG",
     " PRIX ": " 222,000,000.00 € ",
-    "LIEN": "Cartes/2017.svg"
+    "LIEN": "Cartes/2017.svg",
+    "TEXTE": "En 2017, le Paris Saint-Germain a réalisé le transfert le plus cher de l'histoire du football en recrutant Neymar Jr du FC Barcelone pour 222 millions d'euros, soit le montant de sa clause libératoire."
   },
   {
     "ANNÉE": "2018/2019",
@@ -87,7 +95,8 @@
     "VENDEUR": "Real Madrid",
     "ACHETEUR": "Juventus",
     " PRIX ": " 117,000,000.00 € ",
-    "LIEN": "Cartes/2018.svg"
+    "LIEN": "Cartes/2018.svg",
+    "TEXTE": "En 2018, Cristiano Ronaldo a mis fin à son règne de neuf ans au Real Madrid en signant à la Juventus de Turin pour un montant d'environ 117 millions d'euros."
   },
   {
     "ANNÉE": "2019/2020",
@@ -97,17 +106,30 @@
     "VENDEUR": "SL Benfica",
     "ACHETEUR": "Atletico Madrid",
     " PRIX ": " 127,000,000.00 € ",
-    "LIEN": "Cartes/2019.svg"
+    "LIEN": "Cartes/2019.svg",
+    "TEXTE": "En 2019, l'Atlético de Madrid a réalisé le transfert le plus cher de son histoire en recrutant le jeune prodige portugais João Félix en provenance du Benfica Lisbonne."
   },
   {
     "ANNÉE": "2020/2021",
+    "NOM": "Kai Havertz",
+    "NATIONALITÉ": "Allemagne",
+    "DATE": "4/9/20",
+    "VENDEUR": "Bayer Leverkusen",
+    "ACHETEUR": "Chelsea",
+    " PRIX ": " 100,000,000.00 € ",
+    "LIEN": "Cartes/2020.svg",
+    "TEXTE": "En 2020, Chelsea a réalisé un investissement majeur en recrutant le jeune talent allemand Kai Havertz en provenance du Bayer Leverkusen pour environ 100 millions d'euros."
+  },
+  {
+    "ANNÉE": "2021/2022",
     "NOM": "Jack Grealish",
     "NATIONALITÉ": "Angleterre",
     "DATE": "8/5/21",
     "VENDEUR": "Aston Villa",
     "ACHETEUR": "Man City",
     " PRIX ": " 117,500,000.00 € ",
-    "LIEN": "Cartes/2020.svg"
+    "LIEN": "Cartes/2021.svg",
+    "TEXTE": "En 2021, Manchester City a pulvérisé le record du transfert le plus cher de l'histoire du football anglais en recrutant Jack Grealish d'Aston Villa pour 117.5 millions d'euros."
   },
   {
     "ANNÉE": "2022/2023",
@@ -117,7 +139,8 @@
     "VENDEUR": "SL Benfica",
     "ACHETEUR": "Chelsea",
     " PRIX ": " 121,000,000.00 € ",
-    "LIEN": "Cartes/2022.svg"
+    "LIEN": "Cartes/2022.svg",
+    "TEXTE": "En janvier 2023, Chelsea a battu le record britannique des transferts en recrutant le milieu de terrain argentin Enzo Fernández du Benfica Lisbonne pour 121 millions d'euros."
   },
   {
     "ANNÉE": "2023/2024",
@@ -127,7 +150,8 @@
     "VENDEUR": "Dortmund",
     "ACHETEUR": "Real Madrid",
     " PRIX ": " 127,000,000.00 € ",
-    "LIEN": "Cartes/2023.svg"
+    "LIEN": "Cartes/2023.svg",
+    "TEXTE": "En 2023, le Real Madrid a réalisé l'un des plus grands transferts de l'été en s'attachant les services du prodige anglais Jude Bellingham, en provenance du Borussia Dortmund."
   },
   {
     "ANNÉE": "2024/2025",
@@ -137,7 +161,8 @@
     "VENDEUR": "Aston Villa",
     "ACHETEUR": "Al Nassr",
     " PRIX ": " 77,000,000.00 € ",
-    "LIEN": "Cartes/2024.svg"
+    "LIEN": "Cartes/2024.svg",
+    "TEXTE": "En janvier 2025, Jhon Durán a été transféré d'Aston Villa à Al-Nassr en Arabie Saoudite pour un montant significatif d'environ 77 millions d'euros. Cependant, son passage n'a duré que six mois avant qu'il ne soit prêté au club turc de Fenerbahçe pour la saison suivante."
   },
   {
     "ANNÉE": "2025/2026",
@@ -147,6 +172,7 @@
     "VENDEUR": "Newcastle",
     "ACHETEUR": "Liverpool",
     " PRIX ": " 145,000,000.00 € ",
-    "LIEN": "Cartes/2025.svg"
+    "LIEN": "Cartes/2025.svg",
+    "TEXTE": "En septembre 2025, Liverpool a réalisé un transfert record en signant l'attaquant suédois Alexander Isak en provenance de Newcastle United. L'opération, d'un montant de 145 millions d'euros, a constitué un nouveau record pour le football britannique."
   }
 ]
