@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évolution par Championnats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header>
+            <h1>ÉVOLUTION PAR <span class="highlight">CHAMPIONNATS</span></h1>
+        </header>
+
+        <main class="content">
+            <div class="map-container">
+                <img src="Angleterre.svg" class="country" id="gb" data-league="premier" data-bg-color="#190632" data-line-color="#A020F0" alt="Carte de l'Angleterre">
+                <img src="France.svg" class="country" id="fr" data-league="ligue1" data-bg-color="#031F38" data-line-color="#6495ED" alt="Carte de la France">
+                <img src="Espagne.svg" class="country" id="es" data-league="liga" data-bg-color="#bbb13b" data-line-color="#FF4B44" alt="Carte de l'Espagne">
+                <img src="Allemagne.svg" class="country" id="de" data-league="bundes" data-bg-color="#4B0C10" data-line-color="#DE3163" alt="Carte de l'Allemagne">
+                <img src="Italie.svg" class="country" id="it" data-league="seriea" data-bg-color="#00391B" data-line-color="#7CFC00" alt="Carte de l'Italie">
+            </div>
+
+            <div class="chart-wrapper">
+                <div class="logo-container">
+                    <img src="PremierLeague.svg" class="league-logo" data-league="premier" alt="Logo Premier League">
+                    <img src="Ligue1.svg" class="league-logo" data-league="ligue1" alt="Logo Ligue 1">
+                    <img src="Liga.svg" class="league-logo" data-league="liga" alt="Logo La Liga">
+                    <img src="Bundesliga.svg" class="league-logo" data-league="bundes" alt="Logo Bundesliga">
+                    <img src="SerieA.svg" class="league-logo" data-league="seriea" alt="Logo Serie A">
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="evolutionChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
