@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +39,7 @@
   <section id="contexte" class="contexte">
     <div class="contexte-container">
       <h2>
-        <span class="unpeu">UN PEU DE  
+        <span class="unpeu">UN PEU DE
           <span class="img-context-left"><img src="Images/image 18.svg" alt="joueur gauche"></span>
         </span>
         <span class="highlight"> CONTEXTE
@@ -58,8 +61,8 @@
 
   <section id="records" class="records">
     <div class="contexte-container">
-      <h2 class="animate__animated animate__slideInUp">
-        <span class="rec">LES RECORDS 
+      <h2>
+        <span class="rec">LES RECORDS
           <span class="img-records-left"><img src="Images/image 15.svg" alt="joueur gauche"></span>
         </span>
         <span class="highlight"> INDIVIDUELS</span>
@@ -67,20 +70,22 @@
 
       <div class="records-content">
         <div class="records-text">
-          <p> Le record absolu reste celui de Neymar, acheté par le Paris Saint-Germain en 2017 pour <span class="prix"> 222 millions d’euros </span> en provenance du FC Barcelone, un montant qui a bouleversé le marché des transferts. </p>
-          <p>Son coéquipier Kylian Mbappé a suivi la même année avec un transfert de <span class="prix"> 180 millions d’euros </span>, faisant de lui le joueur français le plus cher de l’histoire. </p>
-          <p>Plus récemment, Alexander Isak est devenu l’un des attaquants les plus chers du marché avec un transfert avoisinant <span class="prix">145 millions d’euros </span> , confirmant que l’inflation des transferts touche aussi les nouvelles générations de joueurs.</p>
+          <p> En 2001, Zinédine Zidane a posé les jalons avec son transfert au Real Madrid pour <span class="prix"> 75 millions d’euros </span>. </p>
+          <p>Huit ans plus tard, en 2009, le même club a de nouveau secoué le marché en recrutant Cristiano Ronaldo pour <span class="prix"> 94 millions d’euros </span>, établissant un nouveau record mondial.</p>
+          <p>L'été fou de 2017, où les transferts de Neymar Jr, <span class="prix">222 millions d’euros </span>et Mbappé, <span class="prix">180 millions d’euros </span>, au PSG ont fait paraître modestes les records de la décennie précédente.
+          En conséquence directe, le FC Barcelone a recruté Ousmane Dembélé pour plus de <span class="prix">145 millions d’euros </span> afin de remplacer le Brésilien</p>
+          <p>Ces records individuels ont façonné l’imaginaire du mercato : un <span class="SHOW">SHOW</span> où les montants deviennent des symboles.</p>
         </div>
 
         <div class="swiper-area">
           <span class="img-swiper-left"><img src="Images/neymar.svg" alt="joueur gauche"></span>
           <div class="swiper records-swiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Images/zidane.jpg" alt="bellingham"></div>
+              <div class="swiper-slide"><img src="Images/ronaldo.jpg" alt="Isack"></div>
               <div class="swiper-slide"><img src="Images/neymar.jpg" alt="neymar" width="500"></div>
               <div class="swiper-slide"><img src="Images/dembele.jpg" alt="Dembélé"></div>
-              <div class="swiper-slide"><img src="Images/isack.webp" alt="Isack"></div>
               <div class="swiper-slide"><img src="Images/mbappe.jpg" alt="mbappe"></div>
-              <div class="swiper-slide"><img src="Images/bellingham.jpg" alt="bellingham"></div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -88,38 +93,250 @@
       </div>
     </section>
 
+    <p id="dep" class="col"></p>
+
     <section id="depenses" class="depenses">
       <div class="depenses-container">
-        <h2 class="animate__animated animate__slideInUp">
-          <span class="plus">Les plus gros transferts par 
+        <h2>
+          <span class="plus">Les plus gros transferts par
             <span class="img-depenses-left"><img src="Images/bellingham.svg" alt="joueur droit"></span>
           </span>
           <span class="highlight"> SAISON
             <span class="img-depenses-right"><img src="Images/messi.svg" alt="joueur droit"></span>
           </span>
         </h2>
-        <span class="paragraphe">
-          <p>Le football n’est pas seulement un sport : c’est aussi une économie où les transferts de joueurs atteignent des sommets. Depuis 20 ans, les montants dépensés par les clubs explosent, transformant le mercato en véritable spectacle financier. </p>
+        <span><p class="texte_dep">Chaque mercato a son <span class="roi">ROI</span>, ce joueur dont le transfert record définit toute une saison. D'une année à l'autre, les chiffres s'envolent et les visages changent, témoignant d'une inflation spectaculaire.</p>
         </span>
-        <p>Les grandes puissances européennes, soutenues par des investisseurs privés ou des fonds souverains, rivalisent à coups de millions pour attirer les meilleurs talents. </p>
-        <p>Cette inflation des prix ne concerne pas seulement les stars, mais se répercute aussi sur les jeunes espoirs, parfois achetés pour des sommes astronomiques avant même d’avoir confirmé leur potentiel. </p>
-        <p>À cela s’ajoutent les commissions versées aux agents et les stratégies de communication mises en place pour maximiser l’impact médiatique de chaque transfert.</p>
-        <p>Le mercato devient ainsi un outil de prestige, d’image et de marketing pour les clubs, autant qu’un enjeu sportif.</p>
-        <p>À travers cette visualisation interactive, découvrez l’évolution des transferts : l’inflation des dépenses dans les 5 grands championnats européens et les records marquants qui ont fait l’histoire.</p>
+        
+        <div class="chart-section-container">
+            <div id="display-area">
+                </div>
+            <div class="individual-chart-container">
+                <canvas id="transferChart"></canvas>
+            </div>
+        </div>
+
       </div>
     </section>
 
+    <p id="evo" class="col"></p>
+
+    <section id="evolution" class="evolution">
+      <div class="evolution-container">
+        <h2>
+        <span class="evo">L'ÉVOLUTION DES DÉPENSES PAR
+         <span class="img-evolution-left"><img src="Images/Mbappe.svg" alt="joueur gauche"></span>
+        </span> 
+          <span class="highlight">CHAMPIONNAT</span>
+      </h2>
+      <span><p class="texte_dep">Si les records individuels attirent la lumière, les vraies dynamiques économiques se jouent à l’échelle des championnats. Angleterre, Espagne, Italie, Allemagne, France : chacun déploie sa propre stratégie sur le marché. En cliquant sur une carte, découvrez comment les dépenses ont évolué et observez l'ascension d'un géant : <span class="roi">la Premier League.</span></p>
+      </span>
+ <div class="dashboard-container">
+    <main class="content">
+        <div class="map-container">
+            <img src="Images/Angleterre.svg" class="country" id="gb" data-league="premier" data-bg-color="#160231" data-line-color="#A020F0" alt="Carte de l'Angleterre">
+            <img src="Images/France.svg" class="country" id="fr" data-league="ligue1" data-bg-color="#031F38" data-line-color="#6495ED" alt="Carte de la France">
+            <img src="Images/Espagne.svg" class="country" id="es" data-league="liga" data-bg-color="#494646" data-line-color="#FF4B44" alt="Carte de l'Espagne">
+            <img src="Images/Allemagne.svg" class="country" id="de" data-league="bundes" data-bg-color="#4B0C10" data-line-color="#DE3163" alt="Carte de l'Allemagne">
+            <img src="Images/Italie.svg" class="country" id="it" data-league="seriea" data-bg-color="#00391B" data-line-color="#5DFFA1" alt="Carte de l'Italie">
+        </div>
+
+        <div class="chart-wrapper">
+            <div class="logo-container">
+                <img src="Images/PremierLeague.svg" class="league-logo" data-league="premier" alt="Logo Premier League">
+                <img src="Images/Ligue1.svg" class="league-logo" data-league="ligue1" alt="Logo Ligue 1">
+                <img src="Images/Liga.svg" class="league-logo" data-league="liga" alt="Logo La Liga">
+                <img src="Images/Bundesliga.svg" class="league-logo" data-league="bundes" alt="Logo Bundesliga">
+                <img src="Images/SerieA.svg" class="league-logo" data-league="seriea" alt="Logo Serie A">
+            </div>
+            
+            <div class="evolution-chart-container">
+                <canvas id="evolutionChart"></canvas>
+            </div>
+        </div>
+    </main>
+</div>
+</div>
+</div>
+
+    </section>
+
+    <p id="psg" class="col"></p>
+
+    <section id="puissances" class="puissances">
+      <div class="puissances-container">
+        <h2>
+          <span class="empire">LES EMPIRES
+            <span class="img-puissance-left"><img src="Images/monaco.svg" alt="joueur gauche"></span>
+        </span>
+          </span>
+          
+          <span class="highlight"> FINANCIERS
+          </span>
+        </h2>
+
+        <div class="intro">
+          <img src="Images/logopsg.svg" alt="Logo PSG" class="logo">
+            <div class="description-box">
+                <img src="Images/tour.svg" alt="Tour Eiffel" class="tour-eiffel-img">
+                <p>À Paris, l'arrivée des investisseurs qataris en 2011 a tout bouleversé. Propulsé par la puissance financière du Qatar, le PSG a fait exploser les dépenses pour attirer les plus grandes stars. Son objectif : asseoir son empire et décrocher enfin la première Ligue des Champions de son histoire.</p>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <div class="timeline-events">
+                
+                <div class="timeline-event">
+                    <div class="timeline-date">2011</div>
+                    <img src="Images/2011.svg" alt="Club 2011">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Club ambitieux, mais sans moyens.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2012</div>
+                    <img src="Images/2012.svg" alt="Rachat QSI">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Rachat par QSI, nouveaux objectifs.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2012-2016</div>
+                    <img src="Images/2012-2016.svg" alt="Stars en série">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Stars en série (Ibra, Silva, Cavani), change de dimension.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2019-2024</div>
+                    <img src="Images/2019-2024.svg" alt="Mbappé 180M€">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Mbappé (180 M€) la relève française devient un produit mondial.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2019-2024</div>
+                    <img src="Images/2019-2024bis.svg" alt="PSG Marque">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Le PSG se transforme en marque (premium)</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2025</div>
+                    <img src="Images/2025.svg" alt="Victoire LDC">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Le PSG remporte sa toute première LDC de son histoire.</div>
+                </div>
+
+            </div>
+
+            <p id="city" class="col"></p>
+
+            <div class="intro2">
+          <img src="Images/logoman.svg" alt="Logo PSG" class="logo">
+            <div class="description-box2">
+              <img src="Images/bateau.svg" alt="Tour Eiffel" class="bateau-img">
+                <p>À Manchester, l’arrivée des investisseurs d’Abu Dhabi en 2008 a tout changé. Porté par une puissance financière inédite, City a multiplié les transferts records pour bâtir une équipe de stars. Son objectif : asseoir son empire et remporter enfin la première Ligue des Champions de son histoire.</p>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <div class="timeline-events">
+                
+                <div class="timeline-event">
+                    <div class="timeline-date">2008</div>
+                    <img src="Images/man1.svg" alt="Club 2011">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Club historique, mais sans grands moyens.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2008</div>
+                    <img src="Images/man2.svg" alt="Rachat QSI">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Rachat par Abu Dhabi United Group, début de l’ère moderne.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2009-2011</div>
+                    <img src="Images/man3.svg" alt="Stars en série">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Tevez, Yaya Touré, Silva, Agüero. City entre dans la cour des grands.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2017</div>
+                    <img src="Images/man4.svg" alt="Mbappé 180M€">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Arrivée de Guardiola transformation du style et de la culture du club.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2022</div>
+                    <img src="Images/man6.svg" alt="PSG Marque">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">Haaland l’arme offensive ultime.</div>
+                </div>
+
+                <div class="timeline-event">
+                    <div class="timeline-date">2023</div>
+                    <img src="Images/man5.svg" alt="Victoire LDC">
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-caption">City remporte sa première LDC, apogée du projet.</div>
+                </div>
+
+            </div>
+          </div>
+
+          </section>
+
+          <p id="con" class="col"></p>
+
+          <section id="conclusion" class="conclusion">
+            <div class="conclusion-container">
+        <h2>
+          <span class="highlights">CONCLUSION 
+            <span class="img-conclusion-left"><img src="Images/cr7.svg" alt="joueur gauche"></span>
+          </span>
+          </h2>
+        <div class="conclusion-texte">
+        <p>
+          “Le mercato n’est plus un simple épisode de l’été. C’est le reflet du football d’aujourd’hui : un monde où le spectacle, les sponsors et les stratégies d’investissement se mêlent à la passion du jeu.”
+        </p>
+        <p>
+          “Les chiffres impressionnent. Mais derrière eux, il reste des histoires de joueurs, de clubs et de rêves — parfois démesurés.”
+        </p>
+      </div>
+        </div>
+          </section>
+
+
   <a href="#top" class="scroll-up">⌃</a>
+  <footer>
+            <div class="footer-container">
+              <div class="footer-logo">
+                <span class="mercato">MERCATO</span><span class="viz">VIZ</span>
+              </div>
+              <div class="footer-links">
+                <a href="#">MENTIONS LÉGALES</a>
+                <a href="#">NOS CONTACTS</a>
+              </div>
+            </div>
+          </footer>
 
   <aside class="side-header">
     <ul>
-      <li><a href="#cont">UN PEU DE CONTEXTE</a></li>
-      <li><a href="#rec">LES RECORDS INDIVIDUELS</a></li>
-      <li><a href="#depenses">PlUS GROS TRANSFERTS PAR SAISON</a></li>
-      <li><a href="#conclusion">ÉVOLUTION 5 CHAMPIONNATS</a></li>
+      <li><a href="#cont">CONTEXTE</a></li>
+      <li><a href="#rec">RECORDS INDIVIDUELS</a></li>
+      <li><a href="#dep">GROS TRANSFERTS PAR SAISON</a></li>
+      <li><a href="#evo">ÉVOLUTION 5 CHAMPIONNATS</a></li>
+      <li><a href="#psg">PARIS SG</a></li>
+      <li><a href="#city">MANCHESTER CITY</a></li>
+      <li><a href="#con">CONCLUSION</a></li>
     </ul>
   </aside>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script> 
 </body>
