@@ -1,98 +1,142 @@
-/* Importation d'une police Google Fonts pour les paragraphes si tu veux quelque chose de plus "moderne" */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Importation d'une police Google Fonts pour les paragraphes */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-    background-color: #1a1a1a; /* Fond gris très foncé, presque noir */
-    color: #f0f0f0; /* Texte principal clair */
-    font-family: 'Roboto', sans-serif; /* Police pour le corps du texte */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    display: flex; /* Utilisation de flexbox pour structurer la page */
-    flex-direction: column;
-    min-height: 100vh; /* Pour que le footer reste en bas */
-}
+        @font-face {
+            font-family: "Evil";
+            src: url("Polices/evil_empire/Evil\ Empire.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
 
+        @font-face {
+            font-family: "Urban";
+            src: url("Polices/urban_shadow_sans_serif/Urban\ Shadow\ Sans\ Serif.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
 
+        body {
+            background-color: #1a1a1a; /* Fond gris très foncé, presque noir */
+            color: #f0f0f0; /* Texte principal clair */
+            font-family: 'Roboto', sans-serif; /* Police pour le corps du texte */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex; /* Utilisation de flexbox pour structurer la page */
+            flex-direction: column;
+            min-height: 100vh; /* Pour que le footer reste en bas */
+        }
 
-/* Styles pour le titre principal "MERCATOVIZ" */
-.main-title {
-    font-family: Impact, sans-serif; /* Police pour le titre */
-    font-size: 5em; /* Grande taille */
-    color: #ffd700; /* Blanc */
-    text-align: center;
-    margin: 40px 0; /* Espacement autour du titre */
-    letter-spacing: 0.1em; /* Espacement entre les lettres */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Petite ombre pour le relief */
-}
+        /* Styles pour le titre principal "MERCATOVIZ" (non utilisé dans cet HTML mais gardé) */
+        .main-title {
+            font-family: "Evil"; /* Police pour le titre */
+            font-size: 5em; /* Grande taille */
+            color: #ffd700; /* Blanc */
+            text-align: center;
+            margin: 40px 0; /* Espacement autour du titre */
+            letter-spacing: 0.1em; /* Espacement entre les lettres */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Petite ombre pour le relief */
+        }
 
-header, footer {
-    background-color: #0d0d0d; /* Fond légèrement plus foncé pour l'entête/pied de page */
-    padding: 20px 0;
-    border-bottom: 1px solid #333; /* Ligne de séparation */
-    border-top: 1px solid #333; /* Ligne de séparation pour le footer */
-}
+        header {
+            background-color: #0d0d0d;
+            padding: 20px 0;
+            border-bottom: 1px solid #333; /* Ligne de séparation */
+        }
 
-footer {
-    margin-top: auto; /* Pousse le footer vers le bas */
-    border-top: 1px solid #333;
-    border-bottom: none;
-}
+        footer {
+            background-color: #0d0d0d; /* Fond légèrement plus foncé */
+            padding: 20px 0;
+            border-top: 1px solid #333; /* Ligne de séparation */
+            margin-top: auto; /* Pousse le footer vers le bas */
+            text-align: center; /* Ajouté pour centrer le logo h1 */
+        }
 
-/* Conteneur principal pour le contenu des mentions légales */
-.content-wrapper {
-    max-width: 900px; /* Largeur maximale du contenu */
-    margin: 40px auto; /* Centrer le contenu et ajouter de l'espacement */
-    padding: 30px;
-    background-color: rgba(26, 26, 26, 0.9); /* Fond du contenu avec une légère transparence */
-    border-radius: 8px; /* Bords légèrement arrondis */
-    
-    flex-grow: 1; /* Permet au contenu de prendre l'espace disponible */
-}
+        /* Conteneur principal pour le contenu des mentions légales */
+        .content-wrapper {
+            max-width: 900px; /* Largeur maximale du contenu */
+            margin: 40px auto; /* Centrer le contenu et ajouter de l'espacement */
+            padding: 30px;
+            background-color: rgba(26, 26, 26, 0.9); /* Fond du contenu avec une légère transparence */
+            border-radius: 8px; /* Bords légèrement arrondis */
+            flex-grow: 1; /* Permet au contenu de prendre l'espace disponible */
+        }
 
-/* Style pour les titres de section comme "MENTIONS LÉGALES" */
-.section-title {
-    font-family: Impact, sans-serif; /* Police */
-    font-size: 2.8em; /* Grande taille */
-    color: #ffd700; /* Jaune doré */
-    text-transform: uppercase; /* Tout en majuscules */
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ffd700; /* Soulignement jaune */
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
+        /* Style pour les titres de section comme "MENTIONS LÉGALES" */
+        .section-title {
+            font-family: Impact, sans-serif; /* Police */
+            font-size: 2.8em; /* Grande taille */
+            color: #ffd700; /* Jaune doré */
+            text-transform: uppercase; /* Tout en majuscules */
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffd700; /* Soulignement jaune */
+            padding-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
 
-/* Style pour les titres d'articles comme "Article 1 : L'éditeur" */
-.article-title {
-    font-family: 'Roboto', sans-serif; /* Une police plus sobre */
-    font-weight: 700; /* Gras */
-    font-size: 1.8em; /* Taille un peu plus petite que les sections */
-    color: #ffd700; /* Blanc/Gris clair */
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
+        /* Style pour les titres d'articles comme "Article 1 : L'éditeur" */
+        .article-title {
+            font-family: 'Roboto', sans-serif; /* Une police plus sobre */
+            font-weight: 700; /* Gras */
+            font-size: 1.8em; /* Taille un peu plus petite que les sections */
+            color: #ffd700; /* Blanc/Gris clair */
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
 
-p {
-    margin-bottom: 15px;
-    text-align: justify; /* Justifier le texte des paragraphes */
-    font-size: 1.1em;
-}
+        p {
+            margin-bottom: 15px;
+            text-align: justify; /* Justifier le texte des paragraphes */
+            font-size: 1.1em;
+        }
 
-a {
-    color: #00bfff; /* Liens en bleu clair */
-    text-decoration: none; /* Pas de soulignement par défaut */
-}
+        a {
+            color: #00bfff; /* Liens en bleu clair */
+            text-decoration: none; /* Pas de soulignement par défaut */
+        }
 
-a:hover {
-    text-decoration: underline; /* Souligné au survol */
-}
+        a:hover {
+            text-decoration: underline; /* Souligné au survol */
+        }
 
-strong {
-    color: #ffffff; /* Texte en gras en blanc */
-}
+        strong {
+            color: #ffffff; /* Texte en gras en blanc */
+        }
 
-em {
-    font-style: italic;
-    color: #ccc; /* Texte en italique légèrement grisé */
-}
+        em {
+            font-style: italic;
+            color: #ccc; /* Texte en italique légèrement grisé */
+        }
+
+        /* Styles pour le logo H1 (utilisé dans le footer) */
+        h1 {
+            font-family: "Evil";
+            color: white;
+            font-size: 7em; /* Taille par défaut (sera surchargée dans le footer) */
+            position: relative;
+            display: inline-block;
+            margin: 0;
+            margin-bottom: -15px;
+        }
+
+        h1 .mercato {
+            letter-spacing: 3px;
+            display: inline-block;
+            margin-right: -20px;
+            position: relative;
+        }
+
+        h1 .viz {
+            font-family: "Urban";
+            color: #EDD60A;
+            letter-spacing: 3.5px;
+            font-size: 1.3em;
+            position: relative;
+        }
+        
+        /* Règle spécifique pour le H1 dans le footer */
+        footer h1 {
+            font-size: 2.5em; /* Taille réduite pour le footer */
+            margin-bottom: 0; /* Réinitialiser la marge pour le footer */
+        }
