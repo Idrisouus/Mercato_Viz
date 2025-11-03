@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +39,7 @@
   <section id="contexte" class="contexte">
     <div class="contexte-container">
       <h2>
-        <span class="unpeu">UN PEU DE  
+        <span class="unpeu">UN PEU DE
           <span class="img-context-left"><img src="Images/image 18.svg" alt="joueur gauche"></span>
         </span>
         <span class="highlight"> CONTEXTE
@@ -58,8 +61,8 @@
 
   <section id="records" class="records">
     <div class="contexte-container">
-      <h2 class="animate__animated animate__slideInUp">
-        <span class="rec">LES RECORDS 
+      <h2>
+        <span class="rec">LES RECORDS
           <span class="img-records-left"><img src="Images/image 15.svg" alt="joueur gauche"></span>
         </span>
         <span class="highlight"> INDIVIDUELS</span>
@@ -67,20 +70,22 @@
 
       <div class="records-content">
         <div class="records-text">
-          <p> Le record absolu reste celui de Neymar, acheté par le Paris Saint-Germain en 2017 pour <span class="prix"> 222 millions d’euros </span> en provenance du FC Barcelone, un montant qui a bouleversé le marché des transferts. </p>
-          <p>Son coéquipier Kylian Mbappé a suivi la même année avec un transfert de <span class="prix"> 180 millions d’euros </span>, faisant de lui le joueur français le plus cher de l’histoire. </p>
-          <p>Plus récemment, Alexander Isak est devenu l’un des attaquants les plus chers du marché avec un transfert avoisinant <span class="prix">145 millions d’euros </span> , confirmant que l’inflation des transferts touche aussi les nouvelles générations de joueurs.</p>
+          <p> En 2001, Zinédine Zidane a posé les jalons avec son transfert au Real Madrid pour <span class="prix"> 75 millions d’euros </span>. </p>
+          <p>Huit ans plus tard, en 2009, le même club a de nouveau secoué le marché en recrutant Cristiano Ronaldo pour <span class="prix"> 94 millions d’euros </span>, établissant un nouveau record mondial.</p>
+          <p>L'été fou de 2017, où les transferts de Neymar Jr, <span class="prix">222 millions d’euros </span>et Mbappé, <span class="prix">180 millions d’euros </span>, au PSG ont fait paraître modestes les records de la décennie précédente.
+          En conséquence directe, le FC Barcelone a recruté Ousmane Dembélé pour plus de <span class="prix">145 millions d’euros </span> afin de remplacer le Brésilien</p>
+          <p>Ces records individuels ont façonné l’imaginaire du mercato : un <span class="SHOW">SHOW</span> où les montants deviennent des symboles.</p>
         </div>
 
         <div class="swiper-area">
           <span class="img-swiper-left"><img src="Images/neymar.svg" alt="joueur gauche"></span>
           <div class="swiper records-swiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Images/zidane.jpg" alt="bellingham"></div>
+              <div class="swiper-slide"><img src="Images/ronaldo.jpg" alt="Isack"></div>
               <div class="swiper-slide"><img src="Images/neymar.jpg" alt="neymar" width="500"></div>
               <div class="swiper-slide"><img src="Images/dembele.jpg" alt="Dembélé"></div>
-              <div class="swiper-slide"><img src="Images/isack.webp" alt="Isack"></div>
               <div class="swiper-slide"><img src="Images/mbappe.jpg" alt="mbappe"></div>
-              <div class="swiper-slide"><img src="Images/bellingham.jpg" alt="bellingham"></div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -88,38 +93,58 @@
       </div>
     </section>
 
+    <p id="dep" class="col"></p>
+
     <section id="depenses" class="depenses">
       <div class="depenses-container">
-        <h2 class="animate__animated animate__slideInUp">
-          <span class="plus">Les plus gros transferts par 
+        <h2>
+          <span class="plus">Les plus gros transferts par
             <span class="img-depenses-left"><img src="Images/bellingham.svg" alt="joueur droit"></span>
           </span>
           <span class="highlight"> SAISON
             <span class="img-depenses-right"><img src="Images/messi.svg" alt="joueur droit"></span>
           </span>
         </h2>
-        <span class="paragraphe">
-          <p>Le football n’est pas seulement un sport : c’est aussi une économie où les transferts de joueurs atteignent des sommets. Depuis 20 ans, les montants dépensés par les clubs explosent, transformant le mercato en véritable spectacle financier. </p>
+        <span><p class="texte_dep">Chaque mercato a son <span class="roi">ROI</span>, ce joueur dont le transfert record définit toute une saison. D'une année à l'autre, les chiffres s'envolent et les visages changent, témoignant d'une inflation spectaculaire.</p>
         </span>
-        <p>Les grandes puissances européennes, soutenues par des investisseurs privés ou des fonds souverains, rivalisent à coups de millions pour attirer les meilleurs talents. </p>
-        <p>Cette inflation des prix ne concerne pas seulement les stars, mais se répercute aussi sur les jeunes espoirs, parfois achetés pour des sommes astronomiques avant même d’avoir confirmé leur potentiel. </p>
-        <p>À cela s’ajoutent les commissions versées aux agents et les stratégies de communication mises en place pour maximiser l’impact médiatique de chaque transfert.</p>
-        <p>Le mercato devient ainsi un outil de prestige, d’image et de marketing pour les clubs, autant qu’un enjeu sportif.</p>
-        <p>À travers cette visualisation interactive, découvrez l’évolution des transferts : l’inflation des dépenses dans les 5 grands championnats européens et les records marquants qui ont fait l’histoire.</p>
+        
+        <div class="chart-section-container">
+            <div id="display-area">
+                </div>
+            <div class="individual-chart-container">
+                <canvas id="transferChart"></canvas>
+            </div>
+        </div>
+
       </div>
     </section>
 
   <a href="#top" class="scroll-up">⌃</a>
+  <footer>
+            <div class="footer-container">
+              <div class="footer-logo">
+                <span class="mercato">MERCATO</span><span class="viz">VIZ</span>
+              </div>
+              <div class="footer-links">
+                <a href="#">MENTIONS LÉGALES</a>
+                <a href="#">NOS CONTACTS</a>
+              </div>
+            </div>
+          </footer>
 
   <aside class="side-header">
     <ul>
-      <li><a href="#cont">UN PEU DE CONTEXTE</a></li>
-      <li><a href="#rec">LES RECORDS INDIVIDUELS</a></li>
-      <li><a href="#depenses">PlUS GROS TRANSFERTS PAR SAISON</a></li>
-      <li><a href="#conclusion">ÉVOLUTION 5 CHAMPIONNATS</a></li>
+      <li><a href="#cont">CONTEXTE</a></li>
+      <li><a href="#rec">RECORDS INDIVIDUELS</a></li>
+      <li><a href="#dep">GROS TRANSFERTS PAR SAISON</a></li>
+      <li><a href="#evo">ÉVOLUTION 5 CHAMPIONNATS</a></li>
+      <li><a href="#psg">PARIS SG</a></li>
+      <li><a href="#city">MANCHESTER CITY</a></li>
+      <li><a href="#con">CONCLUSION</a></li>
     </ul>
   </aside>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script> 
 </body>
