@@ -17,6 +17,8 @@
   font-style: normal;
 }
 
+
+
 .footer-logo {
   font-family: "Evil";
   color: white;
@@ -24,9 +26,6 @@
   position: relative;
   display: inline-block;
   margin-left: 15px;
-  /* Ajout d'espacement vertical pour aérer */
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .footer-logo .mercato {
@@ -39,90 +38,50 @@
   letter-spacing: 2px;
   font-size: 1.3em;
 }
-
-body {
-  background-color: #1a1a1a;
-  color: aliceblue;
+body{
+    background-color: #1a1a1a;
+    color: aliceblue;
   font-size: larger;
-  /* Empêche le défilement horizontal si les éléments sont trop larges */
-  overflow-x: hidden; 
 }
 
 /* --- Mise en page : 3 colonnes centrées --- */
 .team {
-  display: flex;
-  justify-content: space-around; 
-  align-items: flex-start;
-  text-align: center;
-  margin-top: 30px; /* Réduction de la marge pour être plus proche du titre */
-  /* Permet aux membres de passer à la ligne sur les petits écrans */
-  flex-wrap: wrap; 
-}
-
-/* --- Styles pour chaque membre de l'équipe --- */
-.member {
-  /* Donne une base de taille flexible à chaque membre */
-  flex: 1; 
-  /* Définit une largeur minimale pour éviter qu'ils ne soient trop écrasés */
-  min-width: 250px; 
-  padding: 15px; /* Ajoute de l'espace à l'intérieur de chaque carte membre */
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* --- Style des noms --- */
-.member h2 {
-  /* Contrôle de l'espacement pour les noms */
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 h2 .nom {
-  font-family: "Urban";
-  color: #EDD60A;
-  letter-spacing: 3.5px;
-  font-size: 1.3em;
-  margin-left: 10px;
+    font-family: "Urban";
+    color: #EDD60A;
+    letter-spacing: 3.5px;
+    font-size: 1.3em;
+    margin-left: 10px;
 }
 
 h2 .prenom {
-  letter-spacing: 3px;
+    letter-spacing: 3px;
 }
 
-/* --- Texte sous les noms (utilisant la classe .texteexplication) --- */
-/* Cible spécifiquement le texte sous les noms */
-.texteexplication { 
-  margin-top: 10px;
-  font-size: 0.9em; /* Légère réduction pour hiérarchiser l'information */
-  opacity: 0.9; /* Légère transparence pour le différencier du titre */
-  /* Pas de marges latérales pour respecter le text-align: center du parent .team */
-  margin-left: 0;
-  margin-right: 0;
+/* --- Texte sous les noms --- */
+p {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
 }
 
-/* --- Style générique pour les paragraphes (supprimé) --- */
-/* J'ai supprimé la règle 'p {...}' générale car elle interférait 
-   avec l'alignement de .texteexplication et était redondante 
-   avec .texte_ligne. */
-
-/* --- Titres de section H4 --- */
-h4 {
+h4{
   color: #EDD60A;
   font-family: "Archivo Narrow";
   font-size: 2.3rem;
   margin-left: 30px;
-  /* Ajout d'une marge supérieure pour mieux séparer les sections */
-  margin-top: 40px; 
 }
 
-/* --- Paragraphes de texte principaux --- */
-.texte_ligne {
-  margin-top: 10px;
-  margin-left: 30px;
-  /* Marge droite symétrique à la marge gauche */
-  margin-right: 30px; 
-  /* Ajout d'une largeur maximale pour améliorer la lisibilité 
-     sur les grands écrans */
-  max-width: 850px; 
-  line-height: 1.6; /* Améliore la lisibilité */
+.texte_ligne{
+   margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 170px;
 }
-
-/* L'accolade '}' en trop à la fin a été supprimée */
