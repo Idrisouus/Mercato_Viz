@@ -1,0 +1,87 @@
+@font-face { 
+  font-family: "Arcane";
+  src: url("Polices/arcane_nine/Arcane\ Nine.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Evil";
+  src: url("Polices/evil_empire/Evil\ Empire.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Urban";
+  src: url("Polices/urban_shadow_sans_serif/Urban\ Shadow\ Sans\ Serif.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.footer-logo {
+  font-family: "Evil";
+  color: white;
+  font-size: 2.5em;
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer-logo .mercato {
+  letter-spacing: 2px; 
+}
+
+.footer-logo .viz {
+  font-family: "Urban";
+  color: #EDD60A;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+}
+body{
+    background-color: #1a1a1a;
+    color: aliceblue;
+  font-size: larger;
+}
+
+/* --- Mise en page : 3 colonnes centrées --- */
+.team {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* --- Style des noms --- */
+h2 .nom {
+    font-family: "Urban";
+    color: #EDD60A;
+    letter-spacing: 3.5px;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+h2 .prenom {
+    letter-spacing: 3px;
+}
+
+/* --- Texte sous les noms --- */
+p {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+h4{
+  color: #EDD60A;
+  font-family: "Archivo Narrow";
+  font-size: 2.3rem;
+  margin-left: 30px;
+}
+
+.texte_ligne{
+   margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 170px;
+}
