@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoOverlay = document.getElementById('video-overlay');
     const introVideo = document.getElementById('introVideo');
     const body = document.body;
+    const skipButton = document.getElementById('skip-intro-btn'); // AJOUT
 
     // Fonction pour lancer les animations de la page d'accueil
     function startHomepageAnimations() {
@@ -49,6 +50,29 @@ document.addEventListener('DOMContentLoaded', () => {
         button.style.animationDelay = '1s'; // Nouveau délai
     }
 
+    // --- AJOUT : Fonction centralisée pour terminer/passer la vidéo ---
+    function skipOrEndVideo() {
+        if (!videoOverlay) return; 
+
+        // Empêche de cliquer à nouveau
+        if (skipButton) skipButton.disabled = true; 
+        
+        videoOverlay.classList.add('hidden');
+        body.classList.remove('video-active');
+        startHomepageAnimations();
+        
+        sessionStorage.setItem('introPlayed', 'true');
+        
+        if (introVideo) {
+            introVideo.pause();
+            introVideo.muted = true;
+        }
+
+        setTimeout(() => {
+            if (videoOverlay) videoOverlay.remove();
+        }, 500); // 500ms = 0.5s transition en CSS
+    }
+
 
     // --- LA MODIFICATION PRINCIPALE EST ICI ---
     
@@ -73,47 +97,23 @@ document.addEventListener('DOMContentLoaded', () => {
         if (videoOverlay && introVideo) {
             
             // 2. Écouter l'événement 'ended' (fin de la vidéo)
-            introVideo.addEventListener('ended', () => {
-                videoOverlay.classList.add('hidden');
-                body.classList.remove('video-active');
-                startHomepageAnimations();
-                
-                // --- AJOUT CLÉ : On note que la vidéo a été jouée ---
-                sessionStorage.setItem('introPlayed', 'true');
-                
-                setTimeout(() => {
-                    videoOverlay.remove();
-                }, 500);
-            });
+            introVideo.addEventListener('ended', skipOrEndVideo); // MODIFIÉ
 
             // 3. Gérer les erreurs (si la vidéo ne charge pas)
-            introVideo.addEventListener('error', () => {
+            introVideo.addEventListener('error', () => { // MODIFIÉ
                 console.error("Erreur de chargement de la vidéo d'introduction.");
-                videoOverlay.classList.add('hidden');
-                body.classList.remove('video-active');
-                startHomepageAnimations();
-                
-                // --- AJOUT CLÉ : On note aussi, pour ne pas re-tenter ---
-                sessionStorage.setItem('introPlayed', 'true');
-
-                setTimeout(() => {
-                    videoOverlay.remove();
-                }, 500);
+                skipOrEndVideo();
             });
 
-            // 4. Essayer de lancer la vidéo (sécurité pour certains navigateurs)
-            introVideo.play().catch(error => {
+            // 4. --- AJOUT : Écouter le clic sur le bouton "skip" ---
+            if (skipButton) {
+                skipButton.addEventListener('click', skipOrEndVideo);
+            }
+
+            // 5. Essayer de lancer la vidéo (sécurité pour certains navigateurs)
+            introVideo.play().catch(error => { // MODIFIÉ
                 console.warn("L'autoplay a été bloqué par le navigateur.", error);
-                videoOverlay.classList.add('hidden');
-                body.classList.remove('video-active');
-                startHomepageAnimations();
-
-                // --- AJOUT CLÉ : On note aussi en cas de blocage ---
-                sessionStorage.setItem('introPlayed', 'true');
-
-                 setTimeout(() => {
-                    videoOverlay.remove();
-                }, 500);
+                skipOrEndVideo();
             });
 
         } else {
@@ -240,21 +240,75 @@ document.addEventListener('DOMContentLoaded', () => {
             const displayArea = document.getElementById('display-area');
             const showDefaultMessage = () => { displayArea.innerHTML = '<p>Cliquez sur un point du graphique pour voir le détail du transfert.</p>'; };
             
+            // ==========================================================
+            // === FONCTION updateDisplayContent (Avec LOADER) ===
+            // ==========================================================
             const updateDisplayContent = (data) => {
+                // 1. Mettre en place l'état de chargement immédiatement
+                // Le texte s'affiche tout de suite, avec le loader
+                displayArea.innerHTML = `
+                    <div class="loader-container">
+                        <div class="loader"></div>
+                    </div>
+                    <p class="transfer-description">${data.TEXTE}</p>
+                `;
+    
+                // Récupérer une référence au conteneur du loader
+                const loaderContainer = displayArea.querySelector('.loader-container');
+                if (!loaderContainer) return; // Sécurité
+    
+                // 2. Préparer le bloc HTML final qui contiendra l'image
+                let finalImageHtml = '';
                 if (data.info && data.info.trim() !== "") {
-                    displayArea.innerHTML = `
+                    // Version avec lien
+                    finalImageHtml = `
                         <a href="${data.info}" target="_blank" rel="noopener noreferrer" title="Cliquer pour plus d'infos">
                             <img src="${data.LIEN}" alt="Transfert de ${data.NOM}">
                         </a>
-                        <p class="transfer-description">${data.TEXTE}</p>
                     `;
                 } else {
-                    displayArea.innerHTML = `
+                    // Version sans lien
+                    finalImageHtml = `
                         <img src="${data.LIEN}" alt="Transfert de ${data.NOM}">
-                        <p class="transfer-description">${data.TEXTE}</p>
                     `;
                 }
+    
+                // 3. Créer un objet Image en mémoire pour le précharger
+                const img = new Image();
+                
+                img.onload = () => {
+                    // 4. L'image est chargée avec succès
+                    // On crée un nœud DOM à partir de notre HTML final
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = finalImageHtml;
+                    
+                    // ==========================================================
+                    // === LIGNE CORRIGÉE ===
+                    // ==========================================================
+                    const finalNode = tempDiv.children[0]; // On utilise .children[0] au lieu de .firstChild
+                    // ==========================================================
+
+                    // Remplacer le <div class="loader-container"> par le nœud <a> ou <img>
+                    if (finalNode && loaderContainer.parentNode) {
+                        loaderContainer.parentNode.replaceChild(finalNode, loaderContainer);
+                    }
+                };
+    
+                img.onerror = () => {
+                    // 5. Erreur de chargement de l'image
+                    // Afficher un message d'erreur dans le conteneur du loader
+                    loaderContainer.innerHTML = `
+                        <p class="loader-error">Impossible de charger l'image.</p>
+                    `;
+                };
+    
+                // 6. Lancer le chargement de l'image
+                img.src = data.LIEN;
             };
+            // ==========================================================
+            // === FIN DE LA FONCTION updateDisplayContent ===
+            // ==========================================================
+
 
             const labels = transferData.map(item => item['ANNÉE'].split('/')[0]);
             const prices = transferData.map(item => parseFloat(item[' PRIX '].replace(/\s/g, '').replace('€', '').replace(/,/g, '')));

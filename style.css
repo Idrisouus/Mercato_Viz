@@ -55,6 +55,34 @@ body.video-active {
   overflow: hidden;
 }
 
+/* STYLES POUR LE BOUTON "SKIP" */
+#skip-intro-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  /* Doit être au-dessus de la vidéo et de l'overlay */
+  z-index: 100000; 
+  
+  /* Reprise du style des boutons du site */
+  padding: 12px 24px;
+  border: 2px solid #EDD60A;
+  background: transparent;
+  color: #EDD60A;
+  font-family: "Arcane";
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 1em;
+  transition: 0.3s;
+  
+  /* Légère adaptation pour la superposition */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#skip-intro-btn:hover {
+  background: rgba(255, 255, 255, 0.197);
+  color: #EDD60A;
+}
+
 /* --- FIN : AJOUTS POUR L'INTRO VIDÉO --- */
 
 
@@ -574,6 +602,50 @@ h2 .rec .img-records-left img {
     line-height: 1.4;
     margin: 0;
 }
+
+/* === DÉBUT DE L'AJOUT (LOADER) === */
+
+/* Conteneur pour le loader (pour éviter le saut de page) */
+#display-area .loader-container {
+  width: 100%;
+  /* Hauteur basée sur la hauteur des slides de votre swiper (250px) */
+  height: 250px; 
+  display: flex;
+  flex-direction: column; /* Pour centrer aussi le message d'erreur */
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.05); -- SUPPRIMÉ */
+  /* border-radius: 5px; -- SUPPRIMÉ */
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+/* La roue qui tourne (loader) */
+#display-area .loader {
+  border: 6px solid #f3f3f3; /* Gris clair */
+  border-top: 6px solid #EDD60A; /* Jaune MercatoVIZ */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Message d'erreur si l'image ne charge pas */
+#display-area .loader-error {
+    color: #FF4B44; /* Rouge pour l'erreur */
+    font-family: "Archivo Narrow";
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Animation de rotation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* === FIN DE L'AJOUT (LOADER) === */
+
 
 .individual-chart-container {
     flex-grow: 1;
