@@ -1,3 +1,17 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    min-width: 768px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 @font-face { 
   font-family: "Arcane";
   src: url("Polices/arcane_nine/Arcane\ Nine.otf") format("opentype");
@@ -16,8 +30,118 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+  transition: background-color 0.5s ease-in-out;
+}
+.contact-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 .highlight {
+  font-family: "Urban";
+  color: #EDD60A;
+  letter-spacing: 3.5px;
+  font-size: 1.3em;
+  margin-left: 20px;
+  position: relative; 
+}
+h2 {
+  font-family: "Evil";
+  color: white;
+  font-size: 3em;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: -15px;
+}
+.contact-section{
+    color: white;
+    margin-top: 100px;
+}
+.paragraphe p{
+    margin-top: 50px;
+    font-family: 'Archivo Narrow'; 
+    font-size: 1.2em;
+}
+.createur-section{
+    color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.prenom{
+    font-family: 'Evil';
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    color: white;
 
+}
+.nom{
+    font-family: 'Urban';
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: #EDD60A;
+}
+.member-contact a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Archivo Narrow';
+}
+.roles{
+    font-family: 'Archivo Narrow';
+    font-size: 1.1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.iconl{
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+}
+.icon{
+    margin-top: 5px;
+}
+.mail{
+    margin-left: 3px;
+}
+.viz {
+  font-family: "Urban";
+  color: #EDD60A;
+  letter-spacing: 3.5px;
+  font-size: 1.3em;
+  position: relative; 
+  margin-left: 10px;
+}
+.mercato {
+  letter-spacing: 3px; 
+  display: inline-block;
+  margin-right: -20px; 
+  position: relative; 
+}
+footer {
+  width: 100%;
+  padding-top: 50px; 
+}
 
+.footer-container {
+  margin-left: 20px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
 
 .footer-logo {
   font-family: "Evil";
@@ -25,7 +149,6 @@
   font-size: 2.5em;
   position: relative;
   display: inline-block;
-  margin-left: 15px;
 }
 
 .footer-logo .mercato {
@@ -38,50 +161,39 @@
   letter-spacing: 2px;
   font-size: 1.3em;
 }
-body{
-    background-color: #1a1a1a;
-    color: aliceblue;
-  font-size: larger;
+
+.footer-links {
+  display: flex;
+  gap: 10px;
 }
 
-/* --- Mise en page : 3 colonnes centrées --- */
-.team {
-    display: flex;
-    justify-content: space-around; 
-    align-items: flex-start;
-    text-align: center;
-    margin-top: 50px;
+.footer-links a {
+  font-family: "Arcane";
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
 
-/* --- Style des noms --- */
-h2 .nom {
-    font-family: "Urban";
-    color: #EDD60A;
-    letter-spacing: 3.5px;
-    font-size: 1.3em;
-    margin-left: 10px;
-}
-
-h2 .prenom {
-    letter-spacing: 3px;
-}
-
-/* --- Texte sous les noms --- */
-p {
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 50px;
-}
-
-h4{
+.footer-links a:hover {
   color: #EDD60A;
-  font-family: "Archivo Narrow";
-  font-size: 2.3rem;
-  margin-left: 30px;
 }
-
-.texte_ligne{
-   margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 170px;
+.back-button {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 1150px;
+    padding: 8px 16px;
+    font-size: 1em;
+    background-color: #1a1a1a;
+    color: #EDD60A;
+    border: 1px solid #EDD60A;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.back-button:hover {
+    background-color: #EDD60A;
+    color: #1a1a1a;
 }

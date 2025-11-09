@@ -389,13 +389,52 @@ button.animate__fadeIn{
 
 .contexte {
   margin-top: 200px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
+
+/* =================== MODIFICATION .contexte-container =================== */
 .contexte-container {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  /* --- AJOUTS --- */
+  display: flex;
+  gap: 40px; /* Espace entre la vidéo et le texte */
+  align-items: flex-start; /* Aligne les deux colonnes en haut */
 }
+/* ================= FIN MODIFICATION .contexte-container ================= */
+
+
+/* =================== NOUVEAUX STYLES POUR SECTION CONTEXTE =================== */
+.contexte-video-wrapper {
+  margin-top: 100px;
+  flex: 1; /* La colonne vidéo prend 50% de l'espace */
+  position: relative;
+  overflow: hidden; /* Important pour que l'iframe ait les coins arrondis */
+  align-self: stretch; 
+}
+
+.video-embed-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Ratio 16:9 pour la vidéo */
+}
+
+.video-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contexte-text-wrapper {
+  flex: 1; /* La colonne texte prend 50% de l'espace */
+}
+/* =================== FIN DES NOUVEAUX STYLES CONTEXTE =================== */
+
+
 .contexte-container p {
   font-size: 1.2rem;
 }
@@ -406,6 +445,10 @@ button.animate__fadeIn{
 }
 
 /* Styles H2 */
+
+.contexte h2{
+  margin-left: 92px;
+}
 h2 .unpeu {
   letter-spacing: 3px; 
   display: inline-block;
@@ -415,30 +458,36 @@ h2 .unpeu {
 
 h2 .unpeu .img-context-left {
   position: absolute;
-  top: -103px;  
-  left: -45px;  
+  top: -80px;  
+  left: -34px;  
 }
 
 h2 .unpeu .img-context-left img {
-  width: 120px;
+  width: 100px;
 }
 
 h2 .highlight .img-context-right {
   position: absolute;
-  top: -102px;
-  left: 199px;  
+  top: -64px;
+  left: 206px;  
 }
 
 h2 .highlight .img-context-right img {
-  width: 100px;
+  width: 80px;
 }
 
 /* SECTION RECORDS */
 
 .records {
-  margin-top: 280px;
+  margin-top: 320px;
+  margin-bottom: 150px;
 }
 
+.records-container, .depenses-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .records-content {
   display: flex;
   align-items: flex-start; 
@@ -679,7 +728,47 @@ h2 .plus .img-depenses-left {
 h2 .plus .img-depenses-left img {
   width: 120px;
 }
+/* SECTION TOP3 */
 
+.joueur {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+.joueur-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.joueur-container p {
+  font-size: 1.2rem;
+}
+
+/* Styles H2 */
+h2 .top3 {
+  letter-spacing: 3px; 
+  display: inline-block;
+  margin-right: -20px; 
+  position: relative; 
+}
+
+h2 .top3 .img-context-left {
+  position: absolute;
+  top: -53px;  
+  left: 285px;  
+}
+
+h2 .top3 .img-context-left img {
+  width: 150px;
+}
+h2 .highlight .img-joueur-right {
+  position: absolute;
+  top: -71px;  
+  left: 118px;   
+}
+
+h2 .highlight .img-joueur-right img {
+  width: 100px;
+}
 /* SECTION EVOLUTION CHAMPIONNATS */
 
 .evolution {
