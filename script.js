@@ -624,3 +624,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const declencheur = document.querySelector('#top3');
+    const counter = document.querySelectorAll('.compteur');
+    const valeurs = [400000000, 369220000, 247000000];
+
+
+    counter.forEach((counter, index) => {
+
+
+    const obj = { valeur: 0};
+
+    const valeursfinale = valeurs[index];
+
+    gsap.to(obj, {
+
+        valeur: valeursfinale,
+        duration: 6,
+        ease: "power1.in",
+
+        onUpdate: function() {
+            counter.textContent = Math.floor(obj.valeur).toLocaleString('fr-FR') + ' €';
+        },
+
+        scrollTrigger: {
+            trigger: declencheur,
+            start: 'center',
+            toggleActions: 'play none none none',
+        },
+
+    });
+
+});
+
+});
